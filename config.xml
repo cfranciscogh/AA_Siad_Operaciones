@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="com.antaresaduanas.aasiadoperaciones" version="1.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.antaresaduanas.aasiadoperaciones" version="1.5.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>AA–SIAD Operaciones</name>
     <description>
        Aplicativo Móvil para el seguimiento de la trazabilidad de las diferentes operaciones de Antares Aduanas SAC.
