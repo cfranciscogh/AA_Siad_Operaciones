@@ -97,14 +97,14 @@ function alertDismissed(){
 }
 
 function cargarUsuariosVBO(){
-		alerta(rutaWS + "Autenticacion/Login.asmx/ListarAuxiliarVB");
+	//alerta(rutaWS + "Autenticacion/Login.asmx/ListarAuxiliarVB");
 	//$("#usuario").html("<option value='0'>Seleccionar Usuario</option>");
 	$.mobile.loading('show'); 
 	$.ajax({
         url : rutaWS + "Autenticacion/Login.asmx/ListarAuxiliarVB",
         type: "POST",
 		cache: false,
-		//crossDomain: true,
+		crossDomain: true,
         dataType : "json",
         data : '',//{"Empresa":"'+empresa+'", "IDEstado" : '+idestado+'}',
 		contentType: "application/json; charset=utf-8",
@@ -124,7 +124,7 @@ function cargarUsuariosVBO(){
         },
         error : function(jqxhr) 
         {	
-		  alerta(jqxhr);
+		  //alerta(jqxhr);
           alerta('Error de conexi\u00f3n, contactese con sistemas!');
         }
 
@@ -140,7 +140,7 @@ function cargarUsuarios(){
         url : rutaWS + "Autenticacion/Login.asmx/ListarAuxiliar",
         type: "POST",
 		cache: false,
-		//crossDomain: true,
+		crossDomain: true,
         dataType : "json",
         data : '',//{"Empresa":"'+empresa+'", "IDEstado" : '+idestado+'}',
 		contentType: "application/json; charset=utf-8",
