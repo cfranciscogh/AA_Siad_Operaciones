@@ -1,4 +1,4 @@
-//var rutaWS = "http://www.meridian.com.pe/AntaresAduanas/Servicio/AntaresAduanas/";
+//var rutaWS = "https://www.meridian.com.pe/AntaresAduanas/Servicio/AntaresAduanas/";
 var rutaWS = "https://www.meridian.com.pe/AntaresAduanas/Servicio_TEST/AntaresAduanas/";
 
 $(document).ready(function(e) {
