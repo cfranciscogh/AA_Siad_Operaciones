@@ -12,7 +12,7 @@
 	  <preference name="target-device" value="handset" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
 	<preference name="android-minSdkVersion"      value="28" />  
-	<access origin="http://meridian.com.pe" />
+	<access origin="https://www.meridian.com.pe" />
     <allow-navigation href="*://*.meridian.com.pe/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
