@@ -97,9 +97,9 @@ function alertDismissed(){
 }
 
 function cargarUsuariosVBO(){
-		
+		alerta(rutaWS + "Autenticacion/Login.asmx/ListarAuxiliarVB");
 	//$("#usuario").html("<option value='0'>Seleccionar Usuario</option>");
-	//$.mobile.loading('show'); 
+	$.mobile.loading('show'); 
 	$.ajax({
         url : rutaWS + "Autenticacion/Login.asmx/ListarAuxiliarVB",
         type: "POST",
@@ -122,9 +122,9 @@ function cargarUsuariosVBO(){
 			else{
 			}
         },
-
         error : function(jqxhr) 
         {	
+		  alerta(jqxhr);
           alerta('Error de conexi\u00f3n, contactese con sistemas!');
         }
 
@@ -133,10 +133,9 @@ function cargarUsuariosVBO(){
 }
 
 
-function cargarUsuarios(){
-		
+function cargarUsuarios(){		
 	//$("#usuario").html("<option value='0'>Seleccionar Usuario</option>");
-	//$.mobile.loading('show'); 
+	$.mobile.loading('show'); 
 	$.ajax({
         url : rutaWS + "Autenticacion/Login.asmx/ListarAuxiliar",
         type: "POST",
@@ -159,7 +158,6 @@ function cargarUsuarios(){
 			else{
 			}
         },
-
         error : function(jqxhr) 
         {	
           alerta('Error de conexi\u00f3n, contactese con sistemas!');
